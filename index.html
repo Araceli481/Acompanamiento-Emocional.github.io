@@ -1,237 +1,103 @@
-    <!-- Navegación -->
-    <header>
-        <div class="logo"> E.P. Araceli Valencia / Acompañamiento Emocional</div>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#servicios">¿Qué es?</a>
-            <a href="#contacto" class="btn-nav">Agendar</a>
-        </nav>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompañamiento Emocional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#14151a] text-gray-100 min-h-screen font-sans flex flex-col justify-between">
+
+    <header class="bg-[#1e2029] sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-xl font-bold text-amber-400 tracking-wide">
+                E.P. Araceli Valencia / Acompañamiento Emocional
+            </div>
+            <nav class="flex gap-6 items-center">
+                <a href="#inicio" class="hover:text-amber-400 transition-colors">Inicio</a>
+                <a href="#sobre-mi" class="hover:text-amber-400 transition-colors">Sobre mí</a>
+                <a href="#servicios" class="hover:text-amber-400 transition-colors">¿Qué es?</a>
+                <a href="#contacto" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-4 py-2 rounded-lg transition-colors">Agendar</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Inicio -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>No estas solo(a)</h1>
-            <p>Te acompaño a transitar tus procesos, entender tus emociones y encontrar claridad en un ambiente de escucha activa y sin juicios.</p>
-            <a href="#contacto" class="btn-principal">Inicia tu proceso</a>
-        </div>
-    </section>
+    <main>
+        <section id="inicio" class="container mx-auto px-6 py-20 min-h-[80vh] flex flex-col justify-center items-center text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+                Un espacio seguro para tu bienestar emocional
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-8">
+                Te acompaño en tu proceso de autoconocimiento, sanación y crecimiento personal con un enfoque empático y profesional.
+            </p>
+            <a href="#contacto" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-8 py-3 rounded-full text-lg shadow-lg transition-all transform hover:scale-105">
+                Comienza tu proceso hoy
+            </a>
+        </section>
 
-    <!-- Sobre Mí -->
-<section id="sobre-mi" class="sobre-mi">
-  <div class="contenedor-sobre">
-    <div class="foto-perfil">
-      <!-- Aquí colocas el enlace directo de tu nueva imagen subida -->
-     <img src="https://i.ibb.co/hRWMbq8y/Gemini-Generated-Image-pfduscpfduscpfdu.png" alt="E.P. Araceli Valencia">
-    </div>
-    
-    <div class="texto-sobre">
-      <!-- Aquí va tu texto de presentación actual -->
-    </div>
-  </div>
-</section>
-            </div>
-            <div class="texto-sobre">
-                <h2>Hola, soy Araceli Valencia</h2>
-                <p>Estudiante de 9no cuatrimestre de Psicología. Creo firmemente que todos necesitamos un espacio donde ser escuchados con empatía y respeto.</p>
-                <p>Actualmente ofrezco <strong>acompañamiento emocional</strong> enfocado en brindarte contención, herramientas de autoconocimiento y un mapa para entender lo que estás viviendo, preparándome día a día para mi futura práctica clínica.</p>
-            </div>
-        </div>
-    </section>
+        <hr class="border-gray-800 my-4">
 
-    <!-- Qué es el Acompañamiento -->
-    <section id="servicios" class="servicios">
-        <h2>¿Cómo trabajamos en Acompañamiento Emocional?</h2>
-        <div class="grid-servicios">
-            <div class="tarjeta">
-                <h3>Escucha Activa</h3>
-                <p>Un espacio 100% libre de críticas, donde puedes expresar lo que verdaderamente sientes.</p>
+        <section id="sobre-mi" class="container mx-auto px-6 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-amber-400">Sobre mí</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Hola, soy la E.P. Araceli Valencia. Mi misión es brindarte herramientas prácticas y un entorno de escucha activa para superar los desafíos de la vida diaria.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Creo firmemente en la resiliencia humana y en que cada persona tiene la capacidad de transformar su dolor en crecimiento.
+                    </p>
+                </div>
+                <div class="bg-[#1e2029] h-80 rounded-2xl flex items-center justify-center border border-gray-800 shadow-inner">
+                    <span class="text-gray-500 italic">[ Tu Fotografía Aquí ]</span>
+                </div>
             </div>
-            <div class="tarjeta">
-                <h3>Gestión Emocional</h3>
-                <p>Herramientas prácticas para manejar la ansiedad del día a día, el estrés o la abrumación.</p>
-            </div>
-            <div class="tarjeta">
-                <h3>Procesos de Cambio</h3>
-                <p>Apoyo en momentos de transición: mudanzas, rupturas amorosas, cambios laborales o decisiones importantes.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contacto / Agenda -->
-    <section id="contacto" class="contacto">
-        <h2>Da el primer paso</h2>
-        <p>Escríbeme para agendar una sesión en línea o resolver tus dudas.</p>
-        
-        <!-- Botón directo a WhatsApp para que sea más fácil para ellos -->
-        <a href="https://wa.me/5255331-2374text=Hola,%20me%20gustaría%20agendar%20una%20sesión%20de%20acompañamiento" class="btn-whatsapp" target="_blank">
-            Enviar mensaje por WhatsApp
-        </a>
-    </section>
+        <hr class="border-gray-800 my-4">
 
-    <footer>
-        <p>&copy; 2026 - Espacio de Acompañamiento Emocional. Diseñado con empatía.</p>
+        <section id="servicios" class="container mx-auto px-6 py-20 bg-[#1e2029]/30 rounded-3xl my-10">
+            <h2 class="text-3xl font-bold mb-4 text-center text-amber-400">¿Qué es el Acompañamiento Emocional?</h2>
+            <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">
+                Es un proceso de guía personalizada orientado a ayudarte a gestionar tus emociones, resolver conflictos internos y mejorar tu calidad de vida.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#1e2029] p-8 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all">
+                    <div class="text-amber-400 text-3xl mb-4">🌱</div>
+                    <h3 class="text-xl font-bold mb-2">Gestión del Estrés</h3>
+                    <p class="text-gray-400 text-sm">Aprende técnicas efectivas para canalizar la ansiedad y las presiones cotidianas.</p>
+                </div>
+                <div class="bg-[#1e2029] p-8 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all">
+                    <div class="text-amber-400 text-3xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-2">Procesos de Duelo</h3>
+                    <p class="text-gray-400 text-sm">Un espacio compasivo para transitar pérdidas, rupturas o transiciones difíciles.</p>
+                </div>
+                <div class="bg-[#1e2029] p-8 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all">
+                    <div class="text-amber-400 text-3xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold mb-2">Crecimiento Personal</h3>
+                    <p class="text-gray-400 text-sm">Fortalece tu autoestima y redescubre tus fortalezas internas.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800 my-4">
+
+        <section id="contacto" class="container mx-auto px-6 py-20 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-amber-400">¿Deseas agendar una sesión?</h2>
+            <p class="text-gray-300 max-w-xl mx-auto mb-8">
+                Estoy aquí para escucharte. Haz clic en el botón de abajo para ponerte en contacto conmigo a través de WhatsApp o tu plataforma preferida.
+            </p>
+            <a href="https://wa.me/tu-numero-aqui" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg inline-flex items-center gap-3 transition-transform transform hover:scale-105">
+                💬 Contactar por WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-[#0f1014] py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+        <p>&copy; 2026 E.P. Araceli Valencia. Todos los derechos reservados.</p>
     </footer>
 
 </body>
 </html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diseño de Reels - Acompañamiento Emocional</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    }
-    .font-serif-elegant {
-      font-family: 'Instrument Serif', serif;
-    }
-    .font-serif-classic {
-      font-family: 'Playfair Display', serif;
-    }
-    /* Candle flicker animation */
-    @keyframes flicker {
-      0%, 100% { transform: scale(1) rotate(-2deg); opacity: 0.9; }
-      50% { transform: scale(1.15) rotate(3deg); opacity: 1; filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.8)); }
-    }
-    .animate-flicker {
-      animation: flicker 1.8s infinite ease-in-out;
-    }
-    /* Steam rise animation */
-    @keyframes steam {
-      0% { transform: translateY(10px) scale(0.9); opacity: 0; }
-      50% { opacity: 0.4; }
-      100% { transform: translateY(-40px) scale(1.3); opacity: 0; }
-    }
-    .animate-steam-1 {
-      animation: steam 4s infinite linear;
-    }
-    .animate-steam-2 {
-      animation: steam 4s infinite linear 2s;
-    }
-    /* Gentle plant sway */
-    @keyframes sway {
-      0%, 100% { transform: rotate(0deg); }
-      50% { transform: rotate(1.5deg); }
-    }
-    .animate-sway {
-      animation: sway 6s infinite ease-in-out;
-    }
-    /* Entrance animations for Reel preview */
-    .slide-up {
-      animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .fade-in {
-      animation: fadeIn 1.5s ease-out forwards;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
-</head>
-<body class="bg-[#14151a] text-gray-100 min-h-screen flex flex-col">
-
-  <header class="border-b border-gray-800 bg-[#1c1d24] py-4 px-6 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-[#e87043] flex items-center justify-center shadow-lg shadow-[#e87043]/20">
-          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M12 3c-1.5 2-4 3-6 3s-4-1-4-1V15s2 1 4 1 4.5-1 6-3c1.5 2 4 3 6 3s4-1 4-1V5s-2 1-4 1-4.5-1-6-3z" />
-            <circle cx="9" cy="9" r="1" fill="currentColor"/>
-            <circle cx="15" cy="15" r="1" fill="currentColor"/>
-          </svg>
-        </div>
-        <div>
-          <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
-            E.P. Araceli Valencia Olvera
-            <span class="text-xs bg-[#e87043]/20 text-[#ff8f66] px-2 py-0.5 rounded-full border border-[#e87043]/30 font-normal">Reel Studio</span>
-          </h1>
-          <p class="text-xs text-gray-400">No estas solo</p>
-        </div>
-      </div>
-      <div class="flex gap-2">
-        <span class="text-xs bg-gray-800 text-gray-300 px-3 py-1.5 rounded-md flex items-center gap-1">
-          <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Formato Vertical 9:16
-        </span>
-      </div>
-    </div>
-  </header>
-
-  <main class="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
-    
-    <section class="lg:col-span-5 bg-[#1c1d24] rounded-2xl border border-gray-800 p-6 flex flex-col gap-6 h-fit">
-      <div>
-        <h2 class="text-xl font-bold text-white flex items-center gap-2">
-          <i data-lucide="sliders" class="text-[#e87043] w-5 h-5"></i> Acompañamiento Emocional 
-        </h2>
-        <p class="text-sm text-gray-400 mt-1">No necesitas tocar fondo para pedir ayuda.</p>
-      </div>
-
-      <div class="space-y-4">
-        <div>
-          <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Nombre del Profesional</label>
-          <input type="text" id="input-name" value="E.P. Araceli Valencia Olvera" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">WhatsApp</label>
-          <input type="text" id="input-phone" value="55 3371-2374" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">
-        </div>
-
-        <div class="grid grid-cols-2 gap-3">
-          <div>
-            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Precio Diurno</label>
-            <input type="text" id="input-price-day" value="$250" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Precio Nocturno</label>
-            <input type="text" id="input-price-night" value="$300" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-2 gap-3">
-          <div>
-            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Tiempo de la sesión</label>
-            <input type="text" id="input-duration" value="Sesiones online 50 min" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Horario Nocturno</label>
-            <input type="text" id="input-hours-night" value="9pm a 1am" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">
-          </div>
-        </div>
-
-        <hr class="border-gray-800 my-4">
-
-        <div class="space-y-3">
-          <span class="text-sm font-semibold text-gray-300 block">Textos Específicos por Plantilla:</span>
-          
-          <div>
-            <label class="block text-xs font-medium text-gray-400 mb-1">Frase Plantilla 1 (Diurno)</label>
-            <textarea id="input-p1" rows="2" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-1.5 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">Un espacio para respirar, ordenar ideas y sentirte escuchada(o), sin juicios.</textarea>
-          </div>
-
-          <div>
-            <label class="block text-xs font-medium text-gray-400 mb-1">Frase Plantilla 2 (Mito / Realidad)</label>
-            <textarea id="input-p2-mito" rows="2" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-1.5 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">MITO: De noche debes de soportar sola(o).&#10;REALIDAD: Las emociones y pensamientos no tienen horario.</textarea>
-          </div>
-
-          <div>
-            <label class="block text-xs font-medium text-gray-400 mb-1">Frase Plantilla 3 (Noche Segura)</label>
-            <textarea id="input-p3" rows="2" class="w-full bg-[#111216] border border-gray-700 rounded-lg px-3 py-1.5 text-sm text-white focus:outline-none focus:border-[#e87043] transition-colors">Aquí la noche es segura para soltar la carga, ordenar tus pasos y volver a creer en ti.</textarea>
-          </div>
-        </div>
-
-        <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-3 mt-2 text-xs text-amber-300">
-          <p class="font-medium flex items-
